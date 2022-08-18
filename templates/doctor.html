@@ -1,0 +1,22 @@
+{% extends 'Base.html'%}
+
+{% block content%}
+
+<div class="container text-center">
+{% for x in  doctors%}
+<div class="text-center my-5" style="padding-left: 57px; display:inline-block">
+
+    <div class="card  text-center text-white  bg-secondary " style="width: 18rem;">
+
+    <div class="card-body">
+    <h5 class="card-title"> Dr. {{x.doc_name}}</h5>
+    <p class="card-text">{{x.doc_spec}}</p>
+    <a href="#" class="btn btn-light">{{x.dep_name}} Department</a>
+    </div>
+</div>
+
+
+</div>
+{% endfor%}
+</div>
+{% endblock %}
